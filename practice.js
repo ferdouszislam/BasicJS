@@ -32,7 +32,7 @@ function addObject(objectArray, newObj) {
             else if(typeof objectArray[0] == typeof newObj && newObj instanceof Character){
                 
                 // wait 5s before success response
-                setInterval(() => {
+                setTimeout(() => {
                     
                     objectArray.push(newObj);
                     resolve("object succesfully added.");
